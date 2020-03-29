@@ -350,7 +350,34 @@
     </div>
     <!-- End Tips Content -->
 
+    <!-- Start Map Content -->
+    <div class="container text-center map" id="map">
+        <div class="row">
+            <div class="col-sm-12">
+                <div class="panel">
+                    <div class="card-header map-header">
+                        <h3 class="card-title">تطور الوباء بالمغرب</h3>
+                        <div class="card-options "></div>
+                    </div>
+                    <div class="panel panel-body">
+                        <div class="maplist">
+                            <div class="row">
+                                <div class="container text-center map">
+                                    <div class="card overflow-hidden ">
+                                        <div class="card-body">
+                                            <canvas id="myChart" width="400" height="150"></canvas>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
 
+    <!-- End Tips Content -->
 
     <!-- Start Map Content -->
     <div class="container text-center map" id="map">
@@ -536,6 +563,12 @@
     <!-- Maroc Region GeoJson -->
     <script src="s-leaflet/maroc.js"></script>
 
+    <script src="s-leaflet/api.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js@2.9.3/dist/Chart.min.js"></script>
+
+    <script>
+        getDataChart();
+    </script>
 
     <script>
         var region = new Array();
